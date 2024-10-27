@@ -1,0 +1,114 @@
+/* Container for the entire section */
+.aboutUs-wrapper {
+  background: #e0f7fa; /* Light cyan background */
+  padding: 20px 0;
+}
+
+/* Overall container with paddings */
+.aboutUs-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  background: #e0f7fa; /* Light cyan background */
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Intro section */
+.aboutUs-intro {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.aboutUs-primaryText {
+  font-size: 2rem;
+  color: #004d40;
+  font-weight: 600;
+}
+
+.aboutUs-secondaryText {
+  font-size: 1rem;
+  color: #666666;
+  line-height: 1.4;
+}
+
+/* Mission, Vision, Values section */
+.aboutUs-mission-vision, .aboutUs-values {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* Each vision and value item */
+.aboutUs-vision-item, .aboutUs-value-item {
+  max-width: 300px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Section header */
+.aboutUs-values h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* Text and icon styling for vision and value items */
+.aboutUs-vision-item h2, .aboutUs-value-item h3 {
+  margin: 10px 0 5px;
+}
+
+.aboutUs-vision-item p, .aboutUs-value-item p {
+  font-size: 0.875rem;
+  color: #777777;
+  line-height: 1.4;
+}
+
+
+/* Icon styling */
+.aboutUs-vision-item svg, .aboutUs-value-item svg {
+  margin-bottom: 10px;
+  transition: transform 0.3s;
+}
+
+.aboutUs-vision-item:hover svg, .aboutUs-value-item:hover svg {
+  transform: scale(1.1);
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+  .aboutUs-mission-vision, .aboutUs-values {
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+  }
+  
+  .aboutUs-values h2 {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 30px;
+  }
+
+  .aboutUs-vision-item, .aboutUs-value-item {
+      margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .aboutUs-vision-item, .aboutUs-value-item {
+      margin-bottom: 15px;
+  }
+  
+  .aboutUs-values {
+      margin-bottom: 10px;
+  }
+
+  .aboutUs-primaryText {
+      font-size: 1.6rem;
+  }
+
+  .aboutUs-secondaryText {
+      font-size: 0.875rem;
+  }
+}

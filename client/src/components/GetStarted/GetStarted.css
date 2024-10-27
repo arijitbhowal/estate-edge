@@ -1,0 +1,48 @@
+.inner-container {
+    gap: 1.5rem;
+    background: #00796b; /* Lighter teal background */
+    padding: 2rem;
+    border-radius: 12px; /* Slightly more rounded corners */
+    border: 6px solid #004d40; /* Darker teal border */
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+  }
+  
+  .inner-container .primaryText {
+    color: #e0f7fa; /* Light cyan text for better contrast */
+    font-weight: 700; /* Increased font-weight for emphasis */
+    font-size: 1.8rem; /* Slightly larger text */
+  }
+  
+  .inner-container .secondaryText {
+    color: #b2dfdb; /* Softer light cyan for secondary text */
+    font-size: 1.1rem; /* Slightly larger font for readability */
+    line-height: 1.5; /* Increased line height for better text spacing */
+  }
+  
+  .inner-container .button {
+    background: #004d40; /* Dark teal background matching the border */
+    border: 2px solid #00796b; /* Slightly lighter teal for the border */
+    color: #fff; /* White text for the button */
+    padding: 0.8rem 2rem; /* Added padding for better button size */
+    border-radius: 8px; /* More rounded button corners */
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition effects */
+    cursor: pointer;
+  }
+  
+  .inner-container .button:hover {
+    background: #00332e; /* Darken background on hover for more contrast */
+    border-color: #004d40; /* Ensure border color matches the button on hover */
+    transform: translateY(-3px); /* Subtle lift effect on hover */
+  }
+  
+  .inner-container .button a {
+    color: inherit; /* Inherit color to keep text white */
+    text-decoration: none; /* Remove underline from link */
+    font-weight: 600; /* Slightly bolder text */
+  }
+  
+  .inner-container .button a:hover {
+    text-decoration: underline; /* Add underline on hover for emphasis */
+  }
+  

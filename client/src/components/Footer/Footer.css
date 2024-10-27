@@ -1,0 +1,30 @@
+.f-wrapper {
+    background-color: #333; /* Dark grey background */
+    padding: 2rem 0;
+    border-top: 1px solid #444; /* Slightly lighter grey for the border */
+  }
+
+.f-container{
+    justify-content: space-between;
+}
+.f-left{
+    gap: 1rem;
+}
+.f-menu{
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    font-weight: 500;
+    color: white;
+}
+@media (max-width: 768px) {
+    .f-container{
+        justify-content: center;
+    }
+    .f-container>div{
+        align-items: center!important;
+        text-align: center;
+    }
+    .f-right{
+        justify-content: center;
+    }
+}

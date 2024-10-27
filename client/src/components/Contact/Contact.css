@@ -1,0 +1,154 @@
+.c-wrapper {
+  background: #e0f7fa; /* Light cyan background */
+  padding: 3rem 0;
+}
+
+.c-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.c-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* Increased gap for better spacing */
+}
+
+.c-right {
+  width: 50%;
+}
+
+.highlightText {
+  color: #004d40; /* Dark teal highlight */
+  font-size: 2rem; /* Larger font size */
+  font-weight: bold;
+}
+
+.mainHeading {
+  color: #00796b; /* Teal text */
+  font-size: 2.5rem; /* Larger font size */
+  font-weight: 700;
+}
+
+.subHeading {
+  color: #004d40; /* Dark teal for secondary text */
+  font-size: 1.2rem; /* Larger font size */
+  line-height: 1.6;
+}
+
+.contactModes {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Space between rows */
+}
+
+.row {
+  display: flex;
+  gap: 1.5rem; /* Space between cards */
+  flex-wrap: wrap; /* Ensure cards wrap to new lines if needed */
+}
+
+.mode {
+  background: #ffffff; /* White background */
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 2px solid #00796b; /* Teal border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  min-width: 220px; /* Minimum width to keep uniformity */
+  max-width: 300px; /* Adjusted to ensure consistency */
+  height: 250px; /* Fixed height for uniformity */
+  box-sizing: border-box; /* Include border and padding in width and height */
+}
+
+.icon {
+  background: #d8d8d8; /* Teal background for icon */
+  border: 2px solid #00796b; /* Teal border for icon */
+  border-radius: 50%;
+  padding: 0.5rem;
+  margin-bottom: 1rem; /* Space between icon and text */
+}
+
+.detail {
+  margin-bottom: 1rem; /* Space between details and button */
+  text-align: center; /* Center text within the detail section */
+}
+
+.cardHeading {
+  font-size: 1.2rem; /* Smaller font size for headings inside cards */
+  color: #00796b; /* Teal text */
+}
+
+.cardText {
+  font-size: 0.9rem; /* Smaller font size for text inside cards */
+  color: #004d40; /* Dark teal for card text */
+}
+
+.button {
+  background: #004d40; /* Dark teal button background */
+  color: #ffffff; /* White text */
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+  background: #00332e; /* Darker teal on hover */
+  transform: translateY(-2px); /* Subtle lift effect */
+}
+
+.image-container {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+/* Contact.css */
+
+/* Add specific color classes for icons */
+.icon-phone {
+  color: #007bff; /* Blue color */
+}
+
+.icon-chat {
+  color: #28a745; /* Green color */
+}
+
+.icon-video {
+  color: #dc3545; /* Red color */
+}
+
+.icon-message {
+  color: #ffc107; /* Yellow color */
+}
+
+@media (max-width: 640px) {
+  .c-container {
+    flex-direction: column; /* Stack left and right content vertically */
+    align-items: center; /* Center content horizontally */
+    padding: 1.5rem; /* Reduce padding for smaller screens */
+  }
+  
+  .c-left {
+    text-align: center; /* Center-align text for the left section */
+    width: 100%; /* Ensure full width */
+  }
+  
+  .c-right {
+    display: none; /* Hide the right side on small devices */
+  }
+}
