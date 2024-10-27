@@ -10,9 +10,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     domain="dev-xg3dnnlrc6saqt6k.us.auth0.com"
     clientId="KP7W6TmgdPSkDCWiQ7I4pQXoFkX6Do3j"
      authorizationParams={{
-      redirect_uri: "http://localhost:5173"
+      redirect_uri: "https://estate-edge.vercel.app/"
      }}
-     audience="http://localhost:8000"
+     audience="https://dev-xg3dnnlrc6saqt6k.us.auth0.com/api/v2/"
      scope="openid profile email"
     >
       <App />
