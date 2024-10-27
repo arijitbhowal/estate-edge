@@ -53,7 +53,7 @@ const Header = () => {
               </button>
             ) : (
               <div>
-                <ProfileMenu user={user} logout={logout} />
+                <ProfileMenu user={user} logout={() => logout({ returnTo: window.location.origin })} />
               </div>
             )}
           </div>
